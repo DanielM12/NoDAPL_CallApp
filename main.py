@@ -15,12 +15,12 @@ Builder.load_string('''
 
     BoxLayout:
         size_hint_y: None
-        size: (600,350)
+        size: (600,400)
 	 Label:
-        text: "NO DAPL Call App"
+            text: "NO DAPL Call App"
        
         MakeCallButton:
-            text: 'Call officials and tell them NO DAPL!'
+            text: 'Call Officials Now'
             on_release: self.call()
 
 
@@ -33,17 +33,17 @@ class MakeCallButton(Button):
     tel = {
         'Congressman_Cramer' : '2022252611',
         'Governor_Dalrymple' : '7013282200',
-        'John_Henderson_ArmyCorp' : '4029952229''
+        'John_Henderson_ArmyCorp' : '4029952229',
         'Eileen_Williamson_ArmyCorp' : '4029952417',
         'White_House' : '20245461111'
     }
 
     def call(self, *args):
-        call.makecall(tel=self.tel['Congressman_Cramer'])
-        call.makecall(tel=self.tel['Governor_Dalrymple'])
-        call.makecall(tel=self.tel['John_Henderson_ArmyCorp'])
-        call.makecall(tel=self.tel['Eileen_Williamson_ArmyCorp'])
         call.makecall(tel=self.tel['White_House'])
+    	call.makecall(tel=self.tel['Eileen_Williamson_ArmyCorp'])
+    	call.makecall(tel=self.tel['John_Henderson_ArmyCorp'])
+    	call.makecall(tel=self.tel['Governor_Dalrymple'])
+        call.makecall(tel=self.tel['Congressman_Cramer'])
         	
 
 
