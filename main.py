@@ -37,23 +37,21 @@ Builder.load_string('''
 class CallInterface(BoxLayout):
     pass
 
-
-    
-   
-
-
-
 class MakeCallButton(Button):
     tel = {
-        'Sam' : 'XXXXXXXXXX',
-        'Sammie' : 'xxxxxxxxxx',
-        'Samuel' : 'xxxxxxxxxx'
+        'Congressman_Cramer' : '2022252611',
+        'Governor_Dalrymple' : '7013282200',
+        'John_Henderson_ArmyCorp' : '4029952229''
+        'Eileen_Williamson_ArmyCorp' : '4029952417',
+        'White_House' : '20245461111'
     }
 
     def call(self, *args):
-        call.makecall(tel=self.tel['Sam'])
-        call.makecall(tel=self.tel['Sammie'])
-        call.makecall(tel=self.tel['Samuel'])
+        call.makecall(tel=self.tel['Congressman_Cramer'])
+        call.makecall(tel=self.tel['Governor_Dalrymple'])
+        call.makecall(tel=self.tel['John_Henderson_ArmyCorp'])
+        call.makecall(tel=self.tel['Eileen_Williamson_ArmyCorp'])
+        call.makecall(tel=self.tel['White_House'])
         	
 
 
