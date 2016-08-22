@@ -45,9 +45,9 @@ class CallInterface(BoxLayout):
 
 class MakeCallButton(Button):
     tel = {
-        'Sam' : '2064918590',
-        'Sammie' : '2069228711',
-        'Samuel' : '3603862199'
+        'Sam' : 'XXXXXXXXXX',
+        'Sammie' : 'xxxxxxxxxx',
+        'Samuel' : 'xxxxxxxxxx'
     }
 
     def call(self, *args):
