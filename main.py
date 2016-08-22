@@ -6,33 +6,25 @@ from kivy.properties import StringProperty, DictProperty
 from plyer import call
 
 
-
-
 Builder.load_string('''
 
 
 #: import Platform kivy.utils.platform
 <CallInterface>:
     orientation: 'vertical'
-    Label:
-        text: "This App calls These following Elected and Appointed US goverment officals and offices:
-	ND Gov'nr : Billy Dumbass
-	Da White House - YO!
-	Couple Yeahoos from the Army Corp of Engineers
-	etc"
+
     BoxLayout:
         size_hint_y: None
-        size: (400,400)
+        size: (600,350)
+	 Label:
+        text: "NO DAPL Call App"
        
         MakeCallButton:
-            text: 'Make call via this app'
+            text: 'Call officials and tell them NO DAPL!'
             on_release: self.call()
 
 
 ''')
-
-
-
 
 class CallInterface(BoxLayout):
     pass
